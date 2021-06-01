@@ -62,15 +62,18 @@ body {
 
 nav {
     /* background-image: linear-gradient(to right, rgb(158, 158, 158), rgb(238, 238, 238), #fff) !important; */
-    background: rgb(247, 247, 247) !important;
+    background: #1B242F !important;
 }
 
 nav img {
+    padding: 5px 5px;
     margin-left: 50px;
+    border-radius: 10px;
+    background: #ffffff;
 }
 
 a.nav-link {
-    color: #37373A !important;
+    color: #fff !important;
 }
 
 .nav-item {
@@ -83,6 +86,26 @@ a.nav-link {
 
 a.nav-link:hover {
     color: #4e6ff1 !important;
+}
+
+@media only screen and (min-width: 769px) {
+    .nav-link:hover {
+        opacity: 1;
+    }
+    .nav-link::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #4e6ff1;
+    }
+    .nav-link-ltr::before {
+        width: 0%;
+        bottom: 45px;
+    }
+    .nav-link-ltr:hover::before {
+        width: 4%;
+    }
 }
 
 #trial {
@@ -109,6 +132,7 @@ a.nav-link:hover {
     text-align: justify;
     text-align-last: center;
     color: #fff !important;
+    margin-bottom: 40px !important;
 }
 
 #btngit2 {
@@ -194,7 +218,7 @@ a.nav-link:hover {
 }
 
 #Partners {
-    background-color: #2a3758;
+    background-color: #181f31;
     padding-bottom: 3rem;
 }
 
@@ -399,6 +423,9 @@ iframe {
     }
     .borderb {
         margin-top: 0px;
+    }
+    .borderb2 {
+        margin-bottom: 20px !important;
     }
     .box {
         margin-top: 03vh;
