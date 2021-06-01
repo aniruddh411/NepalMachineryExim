@@ -79,13 +79,22 @@ a.nav-link {
 .nav-item {
     text-align: center;
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 700;
     padding: 20px;
 }
 
 a.nav-link:hover {
     color: #4e6ff1 !important;
+}
+
+button.navbar-toggler {
+    background-color: #fff !important;
+    border: 3px solid #000 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
 }
 
 @media only screen and (min-width: 769px) {
@@ -110,6 +119,7 @@ a.nav-link:hover {
 
 #trial {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/divbg.jpg);
+    background-position: center top;
     /* background-image: url(../Images/divbg2.jpg); */
     height: 75vh;
     box-shadow: inset 40.12px 40.12px 48px #000, inset -40.12px -40.12px 48px #000;
@@ -142,15 +152,15 @@ a.nav-link:hover {
     padding: 15px;
     border: 3px solid #fff;
     cursor: pointer;
-    font-size: 13px;
-    border-radius: 25px;
+    font-size: 15px;
+    border-radius: 30px;
     transition: all 0.4s ease-in-out;
 }
 
 #btngit2:hover {
     color: #fff;
     background-color: #fff;
-    border: 3px solid #263C97;
+    border: 3px solid #fff;
     color: #263C97;
 }
 
