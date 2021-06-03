@@ -49,17 +49,15 @@
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
-
-
             <ul class="list-unstyled components">
                 <li>
                     <a href="#auxSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Auxillary Material</a>
                     <ul class="collapse list-unstyled" id="auxSubmenu">
                         <li>
-                            <a href="#">Scaffold Items</a>
+                            <a href="#" onclick="toggleVisibility('Scaffold');">Scaffold Items</a>
                         </li>
                         <li>
-                            <a href="#">Other Materials</a>
+                            <a href="#" onclick="toggleVisibility('Other');">Other Materials</a>
                         </li>
                     </ul>
                 </li>
@@ -67,7 +65,7 @@
                     <a href="#steelbarSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Steel Bar Machinery <br>&amp; Accessories</a>
                     <ul class="collapse list-unstyled" id="steelbarSubmenu">
                         <li>
-                            <a href="#">GUTE Bar Cutter</a>
+                            <a href="#" onclick="toggleVisibility('BarCutter');">GUTE Bar Cutter</a>
                         </li>
                         <li>
                             <a href="#">GUTE Bar Bender</a>
@@ -157,8 +155,197 @@
               </svg>
         </button>
         <!-- Sidebar ends here  -->
-        <!-- Main Content Starts Here  -->
 
+        <!-- Main Content Starts Here  -->
+        <div id="Products">
+            <div id="AuxillaryMaterial">
+                <div id="Scaffold" class="dflex">
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-054.png" alt="">
+                        <p>Scaffold Steel Pipes</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-055.png" alt="">
+                        <p>Scaffold Steel Pipes</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-056.png" alt="">
+                        <p>Fixed Clamp</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-057.png" alt="">
+                        <p>Pin Clamp</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-058.png" alt="">
+                        <p>Universal Clamp</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-059.png" alt="">
+                        <p>Scaffold Bolt &amp; Nut</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-060.png" alt="">
+                        <p>U Jack &amp; Jack Base</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-061.png" alt="">
+                        <p>F Clamp</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-062.png" alt="">
+                        <p>Mobile Scaffold</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-064.png" alt="">
+                        <p>Mobile Scaffold Wheels</p>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Scaffold/image-067.png" alt="">
+                        <p>Safety Mesh</p>
+                    </div>
+                </div>
+                <div id="Other" class="dflex">
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-065.png" alt="">
+                        <p>Threading Rod</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-066.png" alt="">
+                        <p>Butterfly Nut</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-068.png" alt="">
+                        <p>Ring Nut</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-069.png" alt="">
+                        <p>Nut</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-071.png" alt="">
+                        <p>Threading Rod</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-072.png" alt="">
+                        <p>Disk Nut</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-073.png" alt="">
+                        <p>Anchor Belt</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-074.png" alt="">
+                        <p>Anchor Belt</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-075.png" alt="">
+                        <p>High Ribbed Formwork</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-076.png" alt="">
+                        <p>G. I. Wire</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-077.png" alt="">
+                        <p>Barbed Wire</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-078.png" alt="">
+                        <p>Storage Shelves</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-079.png" alt="">
+                        <p>Plywood</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-080.png" alt="">
+                        <p>Bamboo Springboard</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-081.png" alt="">
+                        <p>Sunshade Net (Green)</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-082.png" alt="">
+                        <p>Sunshade Net (Black)</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-083.png" alt="">
+                        <p>Steel Fiber</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/Auxillary/Other/image-084.png" alt="">
+                        <p>Formwork Clip</p>
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <!-- AuxillaryMaterial ends here  -->
+            <div id="SteelBar">
+                <div id="BarCutter" class="dflex">
+                    <div class="productimg">
+                        <img src="Images/Products Photos/SteelBar/BarCutter/image-086.png" alt="" srcset="">
+                        <p>Steel Bar Cutter</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/SteelBar/BarCutter/image-087.png" alt="" srcset="">
+                        <p>Steel Bar Cutter</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/SteelBar/BarCutter/image-088.png" alt="" srcset="">
+                        <p>Steel Bar Cutter</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/SteelBar/BarCutter/image-089.png" alt="" srcset="">
+                        <p>Steel Bar Cutter</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/SteelBar/BarCutter/image-091.png" alt="" srcset="">
+                        <p>Steel Bar Bender-Cutter</p>
+                        </img>
+                    </div>
+                    <div class="productimg">
+                        <img src="Images/Products Photos/SteelBar/BarCutter/image-092.png" alt="" srcset="">
+                        <p>Steel Bar Cutter</p>
+                        </img>
+                    </div>
+                </div>
+                <div id="BarBender" class="dflex">
+
+                </div>
+                <div id="StirrupBender" class="dflex">
+
+                </div>
+                <div id="SteelBarCutter" class="dflex">
+
+                </div>
+                <div id="GUTEetc" class="dflex">
+
+                </div>
+            </div>
+        </div>
 
 
 
@@ -168,6 +355,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/sidebar.js"></script>
     <script src="JS/bootstrap-4.4.1.js"></script>
+    <script src="JS/Insibility.js"></script>
 </body>
 
 </html>
