@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nepal Machinery Exim</title>
+    <title>Nepal Machinery Exim | Homes</title>
     <link rel="shortcut icon" href="Images/NepalMachineryEximLogo.png">
     <!-- Linked CSS Files are below  -->
     <link rel="stylesheet" href="CSS/index.css">
@@ -19,24 +19,24 @@
     <!-- Navigation Bar Starts Here  -->
     <header>
         <div class="grad-bar" id="grad"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="#"><img src="Images/NepalMachineryEximLogo.png" alt="Company Logo" width="180px"></a>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="Images/NepalMachineryEximLogo.png" alt="Company Logo" width="200px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link nav-link-ltr" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link nav-link-ltr" href="#maincontactform">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Firms</a>
+                        <a class="nav-link nav-link-ltr" href="#">Our Firms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products &amp; Services</a>
+                        <a class="nav-link nav-link-ltr" href="#">Products &amp; Services</a>
                     </li>
                 </ul>
             </div>
@@ -45,26 +45,21 @@
     <!-- Navigation Bar ends here  -->
 
     <!--	Content with intro and vector goes here -->
-    <div id="MainData" class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 box" id="intro">
-                <h1 class="Heading"><span class="headblue">Why Choose Us?</span></h1>
-                <p class="Para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ut omnis dolore amet laboriosam exercitationem magni. In officia alias molestias atque esse consequuntur facere, aut aliquid totam autem optio animi corrupti consequatur
-                    nihil pariatur deserunt aspernatur! Deleniti architecto a modi? Necessitatibus officia cumque dignissimos exercitationem dicta modi excepturi distinctio rerum. Quibusdam at mollitia quisquam. Voluptas, veritatis adipisci quos quasi
-                    eaquis temporibus tempore delectus aliquid eum blanditiis quod nulla porro earum? Sed quod dignissimos optio doloribus, eos eius dolore id!</p>
-                <btn id="btngit">GET IN TOUCH</btn>
-                <!--				add arrow here -->
-            </div>
-            <div class="col-lg-6 box" id="vector">
-                <img src="Images/gears1.png" alt="" id="vecimg">
-            </div>
-        </div>
+    <div id="MainData">
+        <h1 class="Heading" id="IntroHead">Why choose us?</h1>
+        <p id="IntroContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ut omnis dolore amet laboriosam exercitationem magni. In officia alias molestias atque esse consequuntur facere, aut aliquid totam autem optio animi corrupti consequatur nihil
+            pariatur deserunt aspernatur! Deleniti architecto a modi? Necessitatibus officia cumque dignissimos exercitationem dicta modi excepturi distinctio rerum. Quibusdam at mollitia quisquam. Voluptas, veritatis adipisci quos quasi eaquis temporibus
+            tempore delectus aliquid eum blanditiis quod nulla porro earum? Sed quod dignissimos optio doloribus, eos eius dolore id!</p>
+        <a href="#maincontactform" id="IntroButton">GET IN TOUCH</a>
     </div>
+
+
+
     <!--	Content with intro and vector ends here -->
 
     <!--	Logos of various partners starts here -->
     <div class="container-fluid" id="Partners">
-        <h1 class="Heading" id="parap">Our Partners</h1>
+        <h1 class="Heading" id="PartnersHead">Our Partners</h1>
         <div id="PartnerLogos">
             <div class="plogo">
                 <img src="Images/Logo1.png" alt="" class="logoimg">
@@ -101,9 +96,9 @@
     <!-- Partners Part ends here  -->
 
     <!-- Contact Form  -->
-    <div class="contact-part">
+    <div class="contact-part" id="maincontactform">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0 L50 100 L100 0 Z" fill="#2a3758" stroke="#2a3758"></path>
+            <path d="M0 0 L50 100 L100 0 Z" fill="#181f31" stroke="#181f31"></path>
         </svg>
         <div id="contact">
             <div class="row">
@@ -119,7 +114,7 @@
                                     <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Enter Your Email Address" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" name="message" rows="3" placeholder="Enter Your Message" required></textarea>
