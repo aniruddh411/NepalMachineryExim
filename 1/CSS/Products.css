@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS For Scroll Bar  */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #1B242F;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1B242F;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4E6FF1;
+    border: 2px solid #eee;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+.grad-bar {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(-45deg, #BE73F4, #66CCFF, #B2F75A, #FFBA77);
+    background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+    -moz-animation: gradbar 15s ease infinite;
+    animation: gradbar 15s ease infinite;
+}
+
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradbar {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.navbar-color {
+    background: #1B242F !important;
+}
+
+.navimg {
+    padding: 5px 5px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+a.top-nav-link {
+    color: #fff !important;
+}
+
+.top-nav-item {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+a.top-nav-link:hover {
+    color: #4e6ff1 !important;
+}
+
+button.navbar-toggler {
+    background-color: #fff !important;
+    border: 3px solid #000 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+}
+
+@media only screen and (min-width: 769px) {
+    .top-nav-link:hover {
+        opacity: 1;
+    }
+    .top-nav-link::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #4e6ff1;
+    }
+    .nav-link-ltr::before {
+        width: 0%;
+        bottom: 45px;
+    }
+    .nav-link-ltr:hover::before {
+        width: 4%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navimg {
+        margin-left: 0px;
+    }
+}
+
+
+/* Sidebar starts here */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: calc(100vh - 154.525px);
+    max-height: calc(100vh - 154.525px);
+    background: #1B242F;
+    color: #fff;
+    transition: all 0.3s;
+    font-family: 'Rubik', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* overflow-y: hidden; */
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+}
+
+#sidebar ul li a:hover {
+    color: #4E6FF1;
+    /* background: #fff; */
+    text-decoration: none;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #4E6FF1 !important;
+    background: #181F31;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #181F31;
+}
+
+ul ul ul a {
+    padding-left: 50px !important;
+}
+
+#sidebarCollapse {
+    background-color: #FF9900 !important;
+    border-color: #FF9900 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+
+/* Media query of side bar  */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    .blankdiv {
+        display: none;
+    }
+}
+
+
+/* CSS for SideBar ends here  */
+
+
+/* CSS for Main Content starts here  */
+
+#Products {
+    max-height: calc(100vh - 154.525px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.blankdiv {
+    width: 800px;
+    height: 10px;
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productimg {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    max-width: 95vw;
+    border: 4px solid #FF9900;
+    border-radius: 10px;
+    background-color: #1B242F;
+    box-shadow: #1B242F 0px 5px 12px;
+}
+
+.productimg img {
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.fullimg {
+    max-height: 100% !important;
+}
+
+.productimg p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px !important;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+}
