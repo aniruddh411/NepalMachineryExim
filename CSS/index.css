@@ -54,6 +54,24 @@ body {
     }
 }
 
+#topheader {
+    height: auto;
+    padding: 10px;
+    background-color: #252934;
+    color: white;
+}
+
+#topheader img {
+    width: 25px;
+    margin: 0px 5px;
+}
+
+.dflex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 nav {
     background: #1B242F !important;
 }
