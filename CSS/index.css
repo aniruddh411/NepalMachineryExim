@@ -1,4 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS For Scroll Bar  */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #1B242F;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1B242F;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4E6FF1;
+    border: 2px solid #eee;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #252934;
+}
+
+ ::selection {
+    color: #fff;
+    background: #252934;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     box-sizing: border-box;
@@ -54,7 +87,8 @@ a.nav-link:hover {
 
 button.navbar-toggler {
     background-color: #fff !important;
-    border: 3px solid #000 !important;
+    border: 3px solid #252934 !important;
+    padding: 5px 5px !important;
 }
 
 .navbar-toggler-icon {
