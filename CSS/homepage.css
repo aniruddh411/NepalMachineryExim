@@ -69,6 +69,8 @@
     }
     
     nav img {
+        position: relative;
+        z-index: 8;
         padding: 5px 5px;
         margin-left: 50px;
         border-radius: 10px;
@@ -88,6 +90,8 @@
     }
     
     button.navbar-toggler {
+        position: relative;
+        z-index: 8;
         background-color: #fff !important;
         border: 3px solid #252934 !important;
         padding: 5px 5px !important;
@@ -95,6 +99,10 @@
     
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+    }
+    
+    .close {
+        opacity: 1 !important;
     }
     
     #MainData {
@@ -334,15 +342,37 @@
     
     @media only screen and (max-width: 768px) {
         nav img {
-            margin-left: 0px;
+            margin-left: 20px;
         }
         nav {
             padding: 0px !important;
-        }
-        .nav-item {
             position: relative;
             z-index: 10;
+        }
+        #MobLogo {
+            display: block;
+        }
+        nav div ul li:nth-child(1) {
+            padding-top: 60%;
+        }
+        nav div ul li:nth-child(5) {
+            padding-top: 20%;
+        }
+        .navbar-toggler {
+            margin-right: 20px;
+        }
+        #navbarNav {
+            position: fixed;
+            top: 0;
+            height: 100vh !important;
+            background-color: #fff;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        .nav-item {
             width: 100vw;
+            /* height: 100vh; */
         }
         li.nav-item {
             background-color: #fff;
