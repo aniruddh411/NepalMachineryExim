@@ -9,61 +9,57 @@
     <title>Nepal Machinery Exim | Home</title>
     <link rel="shortcut icon" href="Images/NepalMachineryEximLogo.png">
     <!-- Linked CSS Files are below  -->
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/homepage.css">
     <link href="CSS/bootstrap-4.4.1.css" rel="stylesheet">
     <!-- Bootstrap -->
     <!-- Add Google Analytics  -->
 </head>
 
 <body>
-    <!-- Navigation Bar Starts Here  -->
-    <header>
-        <div id="topheader">
-            <div class="dflex">
-                <img src="Images/facebook-top.png" alt="">
-                <img src="Images/whatsapp-top.png" alt="">
-                <img src="Images/instagram-top.png" alt="">
-                <img src="Images/linkedin-top.png" alt="">
-            </div>
+    <!-- Main Div with video as bg starts here  -->
+    <div class="landingWrapper">
+        <div id="MainDivBg">
+            <video autoplay playsinline muted loop id="BGvideo">
+            <source src="Images/bgvid.mp4" type="video/mp4">
+            <!-- <source src="Images/bgvid.mp4" type="video/mp4"> -->
+            <!-- remember to add webm  -->
+        </video>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#"><img src="Images/NepalMachineryEximLogo.png" alt="Company Logo" width="220px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#maincontactform">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="firms.html">Our Firms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="Products.html">Products &amp; Services</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Navigation Bar ends here  -->
-
-    <!--	Content with intro and vector goes here -->
-    <div id="MainData">
-        <h1 class="Heading" id="IntroHead">Why choose us?</h1>
-        <p id="IntroContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ut omnis dolore amet laboriosam exercitationem magni. In officia alias molestias atque esse consequuntur facere, aut aliquid totam autem optio animi corrupti consequatur nihil
-            pariatur deserunt aspernatur! Deleniti architecto a modi? Necessitatibus officia cumque dignissimos exercitationem dicta modi excepturi distinctio rerum. Quibusdam at mollitia quisquam. Voluptas, veritatis adipisci quos quasi eaquis temporibus
-            tempore delectus aliquid eum blanditiis quod nulla porro earum? Sed quod dignissimos optio doloribus, eos eius dolore id!</p>
-        <a href="#maincontactform" id="IntroButton">GET IN TOUCH</a>
-        <a href="Products.html" id="IntroButton">SEE OUR PRODUCTS</a>
+        <!-- Navigation Bar Starts Here  -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#"><img src="Images/NepalMachineryEximLogo.png" alt="Company Logo" width="200px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="Products.html">Products &amp; Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="firms.html">Our Firms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="#maincontactform">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Navigation Bar ends here  -->
+        <!--	Content with intro and vector goes here -->
+        <div id="MainData">
+            <p id="IntroContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ut omnis dolore amet laboriosam exercitationem magni. In officia alias molestias atque esse consequuntur facere, <strong>aut aliquid totam autem optio animi corrupti consequatur nihil.</strong></p>
+            <a href="#maincontactform" id="IntroButton">GET IN TOUCH</a>
+            <a href="Products.html" id="IntroButton">SEE OUR PRODUCTS</a>
+        </div>
+        <!-- Main Div with video as bg ends here  -->
     </div>
-
-
-
-    <!--	Content with intro and vector ends here -->
+    <!-- Main Div incl video,text and nav ends here  -->
 
     <!--	Logos of various partners starts here -->
     <div class="container-fluid" id="Partners">
@@ -149,7 +145,7 @@
     <!-- Footer starts here  -->
     <footer id="footer">
         <div class="footer-up">
-            <a href="#topheader" class="btn btn-lg"><i class="fas fa-angle-double-up"><img src="Images/next.png" class="img-fluid" alt="Placeholder image" width="20px"></i></a>
+            <a href="#MainDivBg" class="btn btn-lg"><i class="fas fa-angle-double-up"><img src="Images/next.png" class="img-fluid" alt="Placeholder image" width="20px"></i></a>
         </div>
         <div class="footer-icons">
             <a href="https://www.facebook.com/anirudhagrawal411/" class="btn">
@@ -164,7 +160,6 @@
     </footer>
     <!-- Footer Ends Here  -->
 
-    <!-- External JS Files are below  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/navbar.js"></script>
     <script src="JS/bootstrap-4.4.1.js"></script>

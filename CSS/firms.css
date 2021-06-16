@@ -12,7 +12,7 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: #4E6FF1;
-    border: 2px solid #eee;
+    /* border: 2px solid #eee; */
 }
 
 ::-moz-selection {
