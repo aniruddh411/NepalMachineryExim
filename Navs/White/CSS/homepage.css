@@ -156,9 +156,9 @@
     #CEOmessage {
         font-family: rubik;
         padding-top: 2rem;
-        color: #fff;
+        color: #000;
         /* height: 100vh; */
-        background-color: #091024;
+        background-color: #fff;
     }
     
     #ceopic {
@@ -187,7 +187,7 @@
     }
     
     #Partners {
-        background-color: #181f31;
+        background-color: #fff;
         padding-bottom: 3rem;
         /* height: 100vh; */
         height: auto;
@@ -197,7 +197,7 @@
         padding-top: 3rem;
         font-size: 4rem !important;
         font-weight: 700;
-        color: #fff !important;
+        color: #000 !important;
         padding-top: 20px !important;
     }
     
