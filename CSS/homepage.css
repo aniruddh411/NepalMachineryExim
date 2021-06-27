@@ -48,7 +48,7 @@
         height: 100vh;
         object-fit: cover;
         position: absolute;
-        top: 0;
+        top: 135px;
         left: 0;
         z-index: -1;
     }
@@ -56,7 +56,7 @@
     #MainDivBg:before {
         content: "";
         position: absolute;
-        top: 0;
+        top: 150px;
         right: 0;
         left: 0;
         bottom: 0;
@@ -66,6 +66,7 @@
     
     header {
         z-index: 2;
+        background-color: #fff;
     }
     
     nav img {
@@ -78,7 +79,11 @@
     }
     
     a.nav-link {
-        color: #fff !important;
+        color: #000 !important;
+    }
+    
+    a.nav-link:hover {
+        color: #263C97 !important;
     }
     
     .nav-item {
@@ -152,8 +157,96 @@
         text-align: center;
     }
     
+    #CEOmessage {
+        font-family: rubik;
+        padding-top: 2rem;
+        color: #000;
+        background-color: #fff;
+    }
+    
+    #ceopic {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    
+    .ceoimg {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 0px !important;
+    }
+    
+    .ceoimgcap {
+        margin-top: 10px;
+    }
+    
+    #ceotext {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    
+    .CEOhead {
+        letter-spacing: 3px;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 3.65rem;
+        font-weight: 700;
+    }
+    
+    #AboutUs {
+        font-family: rubik;
+        color: #fff;
+        background-color: #12192b;
+        text-align: right;
+        margin-top: 20px !important;
+        border-top-left-radius: 100px;
+    }
+    
+    .aboutimgdiv {
+        padding: 0px 0px !important;
+    }
+    
+    .aboutimg {
+        max-height: 100vh;
+    }
+    
+    #abouttext {
+        font-size: 1.25rem;
+    }
+    
+    @media only screen and (max-width: 768px) and (min-width: 427px) {
+        .aboutimg {
+            max-width: 50vw;
+            max-height: 100vh;
+        }
+        #AboutUs {
+            border-top-left-radius: 80px;
+        }
+    }
+    
+    @media only screen and (max-width: 426px) {
+        #AboutUs {
+            border-top-left-radius: 80px;
+        }
+        .aboutimg {
+            width: 100vw;
+            max-height: 80vh;
+        }
+        #abouttext {
+            margin-left: 15px !important;
+        }
+        #CEOmessage {
+            display: flex;
+        }
+        #ceotext {
+            order: 1;
+        }
+        #ceopic {
+            order: 2;
+        }
+    }
+    
     #Partners {
-        background-color: #181f31;
+        background-color: #fff;
         padding-bottom: 3rem;
         /* height: 100vh; */
         height: auto;
@@ -163,7 +256,7 @@
         padding-top: 3rem;
         font-size: 4rem !important;
         font-weight: 700;
-        color: #fff !important;
+        color: #000 !important;
         padding-top: 20px !important;
     }
     
@@ -171,7 +264,7 @@
         margin-top: 30px;
         display: grid;
         grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         text-align: center;
         align-items: center;
     }
@@ -340,7 +433,10 @@
         padding-bottom: 20px;
     }
     
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
+        #MainDivBg:before {
+            top: 135px;
+        }
         nav img {
             margin-left: 20px;
         }
@@ -353,10 +449,10 @@
             display: block;
         }
         nav div ul li:nth-child(1) {
-            padding-top: 60%;
+            padding-top: 20%;
         }
         nav div ul li:nth-child(5) {
-            padding-top: 20%;
+            padding-top: 10%;
         }
         .navbar-toggler {
             margin-right: 20px;
@@ -411,9 +507,24 @@
         }
     }
     
+    @media only screen and (max-width: 768px) {
+        nav div ul li:nth-child(1) {
+            padding-top: 33%;
+        }
+        nav div ul li:nth-child(5) {
+            padding-top: 10%;
+        }
+    }
+    
     @media only screen and (max-width: 426px) {
         #MainData {
             transform: translate(0, -35%);
+        }
+        nav div ul li:nth-child(1) {
+            padding-top: 60%;
+        }
+        nav div ul li:nth-child(5) {
+            padding-top: 20%;
         }
     }
     

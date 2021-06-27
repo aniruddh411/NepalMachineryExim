@@ -11,6 +11,7 @@
     <!-- Linked CSS Files are below  -->
     <link rel="stylesheet" href="CSS/homepage.css">
     <link href="CSS/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap -->
     <!-- Add Google Analytics  -->
 </head>
@@ -67,39 +68,79 @@
     </div>
     <!-- Main Div incl video,text and nav ends here  -->
 
+    <!-- ceo -->
+    <div class="container-fluid" id="CEOmessage">
+        <div class="row">
+            <div class="col-md-6 justify-content-center align-self-center" id="ceopic" data-aos="fade-right" data-aos-duration="600">
+                <img src="Images/ceo1.jpeg" alt="" class="ceoimg" width="50%">
+                <p class="ceoimgcap">Mr. Adarsh Sarawagi
+                    <br> Managing Director</p>
+            </div>
+            <div class="col-md-6 justify-content-center align-self-center" id="ceotext" data-aos="fade-left" data-aos-duration="600">
+                <p class="CEOhead">CEO's Message</p>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vitae. Architecto vitae soluta laborum modi culpa neque sed perspiciatis quis reiciendis necessitatibus. Sed praesentium fuga quas illum esse voluptatem mollitia. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Eius molestias fuga amet optio assumenda ab quaerat alias ratione voluptates facere aliquid, adipisci itaque dolorem? Laudantium reiciendis amet neque facilis quae. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Iure quas commodi veritatis ex quam veniam ullam asperiores. Tenetur ipsam dignissimos illum? "</p>
+            </div>
+        </div>
+    </div>
+    <!-- ceo end  -->
+
+    <!-- aboutus  -->
+    <div class="contanier-fluid" id="AboutUs">
+        <div class="row">
+            <div class="col-md-6 justify-content-center align-self-center" id="abouttext" data-aos="zoom-in" data-aos-duration="600">
+                <p class="CEOhead">About Us</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vitae. Architecto vitae soluta laborum modi culpa neque sed perspiciatis quis reiciendis necessitatibus. Sed praesentium fuga quas illum esse voluptatem mollitia. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Eius molestias fuga amet optio assumenda ab quaerat alias ratione voluptates facere aliquid, adipisci itaque dolorem? Laudantium reiciendis amet neque facilis quae. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Iure quas commodi veritatis ex quam veniam ullam asperiores. Tenetur ipsam dignissimos illum? </p>
+            </div>
+            <div class="col-md-6 aboutimgdiv">
+                <img src="Images/about.jpg" alt="" class="aboutimg">
+            </div>
+        </div>
+    </div>
+    <!-- about us end  -->
+
     <!--	Logos of various partners starts here -->
     <div class="container-fluid" id="Partners">
         <h1 class="Heading" id="PartnersHead">Our Partners</h1>
         <div id="PartnerLogos">
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo1.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo2.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo6.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo4.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo5.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo3.jpg" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo4.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo6.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo1.png" alt="" class="logoimg">
             </div>
-            <div class="plogo">
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
+                <img src="Images/Logo5.png" alt="" class="logoimg">
+            </div>
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
                 <img src="Images/Logo2.png" alt="" class="logoimg">
+            </div>
+            <div class="plogo" data-aos="flip-left" data-aos-duration="600">
+                <img src="Images/Logo4.png" alt="" class="logoimg">
             </div>
         </div>
     </div>
@@ -108,7 +149,7 @@
     <!-- Contact Form  -->
     <div class="contact-part" id="maincontactform">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0 L50 100 L100 0 Z" fill="#181f31" stroke="#181f31"></path>
+            <path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
         </svg>
         <div id="contact">
             <div class="row">
@@ -169,6 +210,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/navbar.js"></script>
     <script src="JS/bootstrap-4.4.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

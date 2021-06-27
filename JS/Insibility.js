@@ -1,4 +1,4 @@
-var divs = ["Scaffold", "Other", "BarCutter", "BarBender", "StirrupBender", "SteelBarCutter", "GUTEetc", "Pneumatic", "Power", "Hand", "Hydraulic", "Municipal", "Ramming", "Lifting", "Ventilation", "Camps", "Electrical", "Welding", "Safety", "OtherM", "Kitchen"];
+var divs = ["Scaffold", "Other", "BarCutter", "BarBender", "StirrupBender", "SteelBarCutter", "GUTEetc", "Pneumatic", "Power", "Hand", "Hydraulic", "Municipal", "Ramming", "Lifting", "Ventilation", "Camps", "Electrical", "Welding", "Safety", "OtherM", "Kitchen", "Workshop"];
 var visibleDivId = null;
 
 function toggleVisibility(divId) {
