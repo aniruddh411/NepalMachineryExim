@@ -217,11 +217,11 @@
     }
     
     .aboutimgdiv {
-        padding: 0px 0px !important;
-        text-align: right;
+        text-align: right !important;
     }
     
     .aboutimg {
+        max-width: 100vw;
         max-height: 100vh;
     }
     
@@ -231,6 +231,11 @@
     }
     
     @media only screen and (max-width: 768px) and (min-width: 427px) {
+        .aboutimgdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .aboutimg {
             max-width: 50vw;
             max-height: 100vh;
@@ -511,6 +516,9 @@
         }
         #CEOmessage {
             padding-right: 1rem;
+        }
+        .aboutmain {
+            padding-left: 1rem !important;
         }
         .borderb {
             margin-top: 0px;
